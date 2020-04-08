@@ -13,15 +13,13 @@ aside {
 main {
     height: calc(100vh - 80px);
     background-color: lightblue;
-    padding-left: 230px;
+    padding-left: 200px;
     overflow-y: auto;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    width: 70%;
-    margin: auto;
 }
 
 ul li {
@@ -42,8 +40,6 @@ h1 {
 .galleria {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
-    margin: auto;
 
 }
 
