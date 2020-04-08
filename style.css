@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+aside {
+    height: calc(100vh - 80px);
+    width: 200px;
+    background-color: pink;
+    position: fixed;
+}
+main {
+    height: calc(100vh - 80px);
+    background-color: lightblue;
+    padding-left: 230px;
+    overflow-y: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+.galleria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+
+}
+
+footer {
+    height: 80px;
+    background-color: lightgreen;
+}
