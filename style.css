@@ -38,36 +38,27 @@ div.plus, div.heart {
     height: 30px;
 }
 
-div.plus {
-    background-color: #9a9a9a;
-    position: relative;
-}
 
-div.plus::after {
+li.plus::before {
     content: '\f067';
-	position: absolute;
+	position: relative;
     color: white;
 	font-family: "Font Awesome 5 Pro";
     font-weight: bold;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #9a9a9a;
+    padding: 10px;
+    margin-right: 10px;
 }
 
-div.heart {
-    background-color: #362692;
-    position: relative;
-}
-
-div.heart::after {
+li.heart::before {
     content: '\f004';
-	position: absolute;
+	position: relative;
     color: white;
 	font-family: "Font Awesome 5 Pro";
     font-weight: bold;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #362692;
+    padding: 10px;
+    margin-right: 10px;
 }
 
 .playlist p{
