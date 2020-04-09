@@ -10,6 +10,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -20,11 +26,30 @@ li {
     margin-top: 30px;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
+
 aside {
     height: calc(100vh - 80px);
-    width: 200px;
+    min-width: 80px;
+    width: 10%;
     background-color: black;
-    position: fixed;
+    float: left;
+}
+
+div.logo, div.menu {
+    text-align: center;
+}
+
+.display-no {
+    display: none;
+}
+
+.fa-spotify {
+    color: #1bd05c;
+    margin-top: 20px;
 }
 
 .menu i {
@@ -33,42 +58,12 @@ aside {
     margin-right: 10px;
 }
 
-div.plus, div.heart {
-    width: 30px;
-    height: 30px;
-}
-
-
-li.plus::before {
-    content: '\f067';
-	position: relative;
-    color: white;
-	font-family: "Font Awesome 5 Pro";
-    font-weight: bold;
-    background-color: #9a9a9a;
-    padding: 10px;
-    margin-right: 10px;
-}
-
-li.heart::before {
-    content: '\f004';
-	position: relative;
-    color: white;
-	font-family: "Font Awesome 5 Pro";
-    font-weight: bold;
-    background-color: #362692;
-    padding: 10px;
-    margin-right: 10px;
-}
-
-.playlist p{
-    margin-top: 30px;
-}
-
 main {
     height: calc(100vh - 80px);
-    padding-left: 200px;
+    padding-left: 17px;
     overflow-y: auto;
+    float: left;
+    width: 90%
 }
 
 
@@ -87,28 +82,30 @@ nav a {
     color: #9a9a9a;
 }
 
-.container {
-    width: 70%;
-    margin: auto;
-}
 
-h1 {
+p.titolo {
     margin: 60px 0 0 15px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .galleria {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .card {
     background-color: #282828;
     border-radius: 10px;
-    padding: 20px;
-    margin: 15px;
+    padding: 15px;
+    margin: 10px;
     text-transform: capitalize;
     line-height: 28px;
+}
+
+.card img {
+    height: auto;
+    width: 100%;
 }
 
 small {
@@ -117,5 +114,68 @@ small {
 
 footer {
     height: 80px;
+    width: 100%;
     background-color: lightgreen;
+    position: absolute;
+    bottom: 0;
+
+}
+
+@media all and (min-width: 768px) {
+    .display-no.display-t {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .display-no{
+        display: inline-block;
+    }
+
+    aside {
+        width: 200px;
+    }
+
+    body > aside > div > div.menu {
+    text-align: left;
+    }
+
+    .fa-spotify {
+        display: none;
+    }
+
+    div.plus, div.heart {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    li.plus::before {
+        content: '\f067';
+    	position: relative;
+        color: white;
+    	font-family: "Font Awesome 5 Pro";
+        font-weight: bold;
+        background-color: #9a9a9a;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    li.heart::before {
+        content: '\f004';
+    	position: relative;
+        color: white;
+    	font-family: "Font Awesome 5 Pro";
+        font-weight: bold;
+        background-color: #362692;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .playlist p{
+        margin-top: 30px;
+    }
 }
