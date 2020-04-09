@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 aside {
     height: calc(100vh - 80px);
     width: 200px;
@@ -12,20 +23,25 @@ aside {
 }
 main {
     height: calc(100vh - 80px);
-    background-color: lightblue;
     padding-left: 200px;
     overflow-y: auto;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
 
-ul li {
+nav ul li {
     display: inline-block;
     list-style-type: none;
     margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -41,6 +57,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 
+}
+
+.card {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
 }
 
 footer {
