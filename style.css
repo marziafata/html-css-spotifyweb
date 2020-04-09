@@ -34,7 +34,7 @@ li {
 aside {
     height: calc(100vh - 80px);
     min-width: 80px;
-    width: 10%;
+    width: 20%;
     background-color: black;
     float: left;
 }
@@ -63,7 +63,7 @@ main {
     padding-left: 17px;
     overflow-y: auto;
     float: left;
-    width: 90%
+    width: 80%
 }
 
 
@@ -135,8 +135,8 @@ footer {
         display: inline-block;
     }
 
-    aside {
-        width: 200px;
+    img.spotify-logo-big {
+        width: 100%;
     }
 
     body > aside > div > div.menu {
