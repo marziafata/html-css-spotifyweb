@@ -15,12 +15,65 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
 aside {
     height: calc(100vh - 80px);
     width: 200px;
     background-color: black;
     position: fixed;
 }
+
+.menu i {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+div.plus, div.heart {
+    width: 30px;
+    height: 30px;
+}
+
+div.plus {
+    background-color: #9a9a9a;
+    position: relative;
+}
+
+div.plus::after {
+    content: '\f067';
+	position: absolute;
+    color: white;
+	font-family: "Font Awesome 5 Pro";
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.heart {
+    background-color: #362692;
+    position: relative;
+}
+
+div.heart::after {
+    content: '\f004';
+	position: absolute;
+    color: white;
+	font-family: "Font Awesome 5 Pro";
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playlist p{
+    margin-top: 30px;
+}
+
 main {
     height: calc(100vh - 80px);
     padding-left: 200px;
@@ -30,8 +83,6 @@ main {
 
 nav ul li {
     display: inline-block;
-    list-style-type: none;
-    margin-top: 30px;
 }
 
 nav ul {
