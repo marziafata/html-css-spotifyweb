@@ -6,7 +6,7 @@
 
 body {
     background-color: #121212;
-    color: white;
+    color: #9a9a9a;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,8 +17,12 @@ body {
 }
 
 a {
-    color: white;
+    color: #9a9a9a;
     text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
 
 li {
@@ -42,12 +46,16 @@ div.logo, div.menu {
     text-align: center;
 }
 
+.fas.mobile {
+    color: white;
+}
+
 .display-no {
     display: none;
 }
 
 .fa-spotify {
-    color: #1bd05c;
+    color: #84b200;
     margin-top: 20px;
 }
 
@@ -77,8 +85,8 @@ nav ul {
 nav a {
     padding: 5px;
     text-transform: uppercase;
-    color: #9a9a9a;
     font-size: small;
+
 }
 
 
@@ -86,6 +94,7 @@ p.titolo {
     margin: 60px 0 0 15px;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .galleria {
@@ -107,9 +116,6 @@ p.titolo {
     width: 100%;
 }
 
-small {
-    color: #9a9a9a;
-}
 
 footer {
     height: 80px;
@@ -134,9 +140,25 @@ footer {
         display: inline-block;
     }
 
-    a.display-no, .playlist.display-no {
-        font-size: small;
+    .fas.mobile {
+        display: none;
     }
+
+    a.display-no, .playlist.display-no {
+        font-size: 15px;
+    }
+
+    .menu ul li a:hover{
+        color: white;
+        border-left: 2px solid #84b200;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #84b200;
+    }
+
+
+
 
     img.spotify-logo-big {
         width: 100%;
@@ -159,10 +181,11 @@ footer {
     li.plus::before {
         content: '\f067';
     	position: relative;
-        color: white;
+        color: black;
     	font-family: "Font Awesome 5 Pro";
         font-weight: bold;
-        background-color: #9a9a9a;
+        background-color: white;
+        opacity: 0.5;
         padding: 10px;
         margin-right: 10px;
     }
@@ -175,12 +198,18 @@ footer {
         font-weight: bold;
         background: rgb(54,38,146);
         background: linear-gradient(128deg, rgba(54,38,146,1) 0%, rgba(154,154,154,1) 100%);
+        opacity: 0.5;
         padding: 10px;
         margin-right: 10px;
     }
 
+    li.heart:hover::before, li.plus:hover::before {
+        opacity: 1;
+    }
+
     .playlist p{
         margin-top: 55px;
+        text-transform: uppercase;
     }
 
     .card {
