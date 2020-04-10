@@ -82,6 +82,7 @@ div.logo, div.menu, div.profilo {
     transform: translateX(-50%);
     padding-bottom: 10px;
 }
+
 main {
     height: calc(100vh - 80px);
     overflow-y: auto;
@@ -137,6 +138,10 @@ p.titolo {
     width: 100%;
 }
 
+.card p {
+    color: white;
+    font-size: medium;
+}
 
 footer {
     height: 80px;
