@@ -188,13 +188,12 @@ footer {
         width: 100%;
     }
 
-    body > aside > div > div.menu, body > aside > div > div.profilo {
+    body > aside > div > div.menu, body > aside > div:nth-child(2) > div {
     text-align: left;
     }
 
-    body > aside > div > div.profilo {
-        position: relative;
-        margin-top: 100%;
+    body > aside > div:nth-child(2) > div {
+        padding: 7px;
     }
 
     .fa-spotify {
