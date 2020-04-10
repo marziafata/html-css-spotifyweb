@@ -27,7 +27,7 @@ li {
 }
 
 .container {
-    width: 80%;
+    padding: 10px;
     margin: auto;
 }
 
@@ -59,7 +59,6 @@ div.logo, div.menu {
 
 main {
     height: calc(100vh - 80px);
-    padding-left: 17px;
     overflow-y: auto;
     float: left;
     width: 80%
@@ -79,12 +78,13 @@ nav a {
     padding: 5px;
     text-transform: uppercase;
     color: #9a9a9a;
+    font-size: small;
 }
 
 
 p.titolo {
     margin: 60px 0 0 15px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -120,18 +120,22 @@ footer {
 
 }
 
-@media all and (min-width: 768px) {
+/* @media all and (min-width: 768px) {
     .display-no.display-t {
         display: flex;
         justify-content: center;
         font-size: 13px;
 
     }
-}
+} */
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
     .display-no{
         display: inline-block;
+    }
+
+    a.display-no, .playlist.display-no {
+        font-size: small;
     }
 
     img.spotify-logo-big {
@@ -169,12 +173,17 @@ footer {
         color: white;
     	font-family: "Font Awesome 5 Pro";
         font-weight: bold;
-        background-color: #362692;
+        background: rgb(54,38,146);
+        background: linear-gradient(128deg, rgba(54,38,146,1) 0%, rgba(154,154,154,1) 100%);
         padding: 10px;
         margin-right: 10px;
     }
 
     .playlist p{
-        margin-top: 30px;
+        margin-top: 55px;
+    }
+
+    .card {
+        margin: 9px;
     }
 }
