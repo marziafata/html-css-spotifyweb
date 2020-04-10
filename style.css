@@ -42,14 +42,21 @@ aside {
     width: 20%;
     background-color: black;
     float: left;
+    position: relative;
 }
 
-div.logo, div.menu {
+.wrap {
+    padding: 7px;
+    height: 100%;
+}
+
+div.logo, div.menu, div.profilo {
     text-align: center;
 }
 
 .fas.mobile {
     color: white;
+    font-size: 20px;
 }
 
 .display-no {
@@ -67,10 +74,14 @@ div.logo, div.menu {
     margin-right: 10px;
 }
 
-.fa-home, .fa-search, .fa-grip-lines-vertical {
-    font-size: 20px;
+.profilo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
 }
-
 main {
     height: calc(100vh - 80px);
     overflow-y: auto;
@@ -167,8 +178,9 @@ footer {
         border-bottom: 2px solid #84b200;
     }
 
-    .fa-home, .fa-search, .fa-grip-lines-vertical {
+    .fa-home, .fa-search, .fa-grip-lines-vertical, .fa-arrow-circle-down, .fa-user {
         font-size: 18px;
+        margin-right: 10px;
     }
 
 
@@ -176,8 +188,13 @@ footer {
         width: 100%;
     }
 
-    body > aside > div > div.menu {
+    body > aside > div > div.menu, body > aside > div > div.profilo {
     text-align: left;
+    }
+
+    body > aside > div > div.profilo {
+        position: relative;
+        margin-top: 100%;
     }
 
     .fa-spotify {
