@@ -33,7 +33,6 @@ li {
 
 aside {
     height: calc(100vh - 80px);
-    min-width: 80px;
     width: 20%;
     background-color: black;
     float: left;
