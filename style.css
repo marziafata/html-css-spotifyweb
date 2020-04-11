@@ -11,6 +11,10 @@ body {
     font-size: small
 }
 
+.contenitore {
+    height: 100%;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -87,7 +91,8 @@ main {
     height: calc(100vh - 80px);
     overflow-y: auto;
     float: left;
-    width: 80%
+    width: 80%;
+    background-color: black;
 }
 
 nav {
@@ -146,10 +151,32 @@ p.titolo {
 footer {
     height: 80px;
     width: 100%;
-    background-color: lightgreen;
+    background-color: #282828;
     position: absolute;
     bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.li-footer {
+    margin-top: 0;
+}
+
+.footer-right {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-center {
+    width: 70%;
+}
+
+.footer-left {
+    width: 15%;
 }
 
 /* @media all and (min-width: 768px) {
@@ -252,7 +279,7 @@ footer {
 
 @media all and (min-width: 1024px) {
     aside {
-        width: 200px
+        width: 200px;
     }
 
     main {
