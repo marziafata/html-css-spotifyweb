@@ -20,6 +20,7 @@ body {
 .contenitore {
     height: calc(100vh - 80px);
     overflow: auto;
+    position: relative;
 }
 
 a {
@@ -95,6 +96,12 @@ main {
     margin-left: 7%;
 }
 
+.fa-bars {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
 nav {
     width: 100%;
     justify-content: center;
@@ -113,8 +120,8 @@ nav a {
     padding: 5px;
     text-transform: uppercase;
     font-size: small;
-
 }
+
 
 
 p.titolo {
@@ -234,6 +241,9 @@ footer {
 }
 
 @media all and (min-width: 768px) {
+
+
+
     .display-no{
         display: inline-block;
     }
@@ -358,6 +368,10 @@ footer {
 }
 
 @media all and (min-width: 1024px) {
+
+    .fa-bars {
+        display: none;
+    }
 
     .display-t {
         display: inline-block;
