@@ -160,17 +160,25 @@ footer {
 }
 
 .footer-center {
-    text-align: center;
     width: 70%;
 }
 
 .pulsanti {
-
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
 }
+
+.pulsanti i {
+    font-size: 18px;
+}
+
+
 
 .barra {
     position: relative;
     width: 70%;
+    text-align: center;
     margin:auto;
 }
 
