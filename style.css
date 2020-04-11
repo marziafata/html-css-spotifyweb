@@ -91,7 +91,7 @@ div.logo, div.menu, div.profilo {
 main {
     float: left;
     width: 80%;
-    padding-left: 150px;
+    padding-left: 88px;
 }
 
 nav {
@@ -161,6 +161,14 @@ footer {
 
     }
 } */
+
+@media all and (min-width: 425px) {
+
+    main {
+        padding-left: 150px;
+    }
+
+}
 
 @media all and (min-width: 768px) {
     .display-no{
@@ -257,9 +265,18 @@ footer {
     .card {
         margin: 9px;
     }
+
+    .display-t {
+        display: none;
+    }
 }
 
 @media all and (min-width: 1024px) {
+
+    .display-t {
+        display: inline-block;
+    }
+
     aside {
         width: 200px
     }
