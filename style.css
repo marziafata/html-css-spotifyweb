@@ -155,8 +155,21 @@ p.titolo {
     font-size: medium;
 }
 
-body > div > main > div > div > div:nth-child(2) > div:nth-child(1):hover {
+.copertina {
+    position: relative;
+}
 
+.card .copertina .fa-play {
+    color: white;
+    background-color: #84b200;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    padding: 25px;
 }
 
 footer {
@@ -209,9 +222,7 @@ footer {
     border-radius: 3px;
 }
 
-.avanzamento:hover::before {
-    background-color: #84b200;
-}
+
 
 
 .avanzamento::after {
@@ -245,17 +256,7 @@ body > footer > div.footer-left > ul > li:nth-child(1) > a {
     color: white;
 }
 
-body > footer > div.footer-left > ul > li:nth-child(1) > a:hover {
-    text-decoration: underline;
-}
 
- body > footer > div.footer-left > ul > li:nth-child(2):hover, body > footer > div.footer-left > i:hover, .fa-redo:hover, .far.fa-heart:hover, .fa-fast-backward:hover, .fa-play-circle:hover, .fa-fast-forward:hover, .fa-random:hover, .fa-volume-up:hover, .fa-circle:hover {
-    color: white;
-}
-
-.fa-play-circle:hover, .fa-circle:hover  {
-    transform: scale(1.2);
-}
 
 @media all and (min-width: 425px) {
 
@@ -268,6 +269,10 @@ body > footer > div.footer-left > ul > li:nth-child(1) > a:hover {
 @media all and (min-width: 768px) {
 
 
+
+    .card .copertina .fa-play:hover {
+        opacity: 1;
+    }
 
     .display-no{
         display: inline-block;
@@ -393,6 +398,22 @@ body > footer > div.footer-left > ul > li:nth-child(1) > a:hover {
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+
+    body > footer > div.footer-left > ul > li:nth-child(1) > a:hover {
+        text-decoration: underline;
+    }
+
+     body > footer > div.footer-left > ul > li:nth-child(2):hover, body > footer > div.footer-left > i:hover, .fa-redo:hover, .far.fa-heart:hover, .fa-fast-backward:hover, .fa-play-circle:hover, .fa-fast-forward:hover, .fa-random:hover, .fa-volume-up:hover, .fa-circle:hover {
+        color: white;
+    }
+
+    .fa-play-circle:hover, .fa-circle:hover  {
+        transform: scale(1.2);
+    }
+
+    .avanzamento:hover::before {
+        background-color: #84b200;
     }
 }
 
