@@ -155,6 +155,10 @@ p.titolo {
     font-size: medium;
 }
 
+body > div > main > div > div > div:nth-child(2) > div:nth-child(1):hover {
+
+}
+
 footer {
     height: 80px;
     width: 100%;
@@ -200,10 +204,15 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: calc(100% / 2);
+    width: calc(( 100% - 12px ) / 2);
     height: 3px;
     border-radius: 3px;
 }
+
+.avanzamento:hover::before {
+    background-color: #84b200;
+}
+
 
 .avanzamento::after {
     right: 0;
@@ -230,6 +239,22 @@ footer {
 
 .footer-left ul li {
     margin-top: 0;
+}
+
+body > footer > div.footer-left > ul > li:nth-child(1) > a {
+    color: white;
+}
+
+body > footer > div.footer-left > ul > li:nth-child(1) > a:hover {
+    text-decoration: underline;
+}
+
+ body > footer > div.footer-left > ul > li:nth-child(2):hover, body > footer > div.footer-left > i:hover, .fa-redo:hover, .far.fa-heart:hover, .fa-fast-backward:hover, .fa-play-circle:hover, .fa-fast-forward:hover, .fa-random:hover, .fa-volume-up:hover, .fa-circle:hover {
+    color: white;
+}
+
+.fa-play-circle:hover, .fa-circle:hover  {
+    transform: scale(1.2);
 }
 
 @media all and (min-width: 425px) {
@@ -329,6 +354,10 @@ footer {
     .playlist p{
         margin-top: 55px;
         text-transform: uppercase;
+    }
+
+    body > div > aside > div > div.profilo {
+        text-align: left;
     }
 
     .card {
